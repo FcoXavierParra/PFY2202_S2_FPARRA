@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Clases reutilizables construidas con utilidades de Tailwind */
+@layer components {
+  .btn-primario {
+    @apply inline-block rounded-lg bg-marca px-4 py-2.5 font-medium text-white transition-colors hover:bg-marca-oscuro focus:outline-none focus:ring-2 focus:ring-marca focus:ring-offset-2;
+  }
+  .btn-secundario {
+    @apply inline-block rounded-lg border border-marca px-4 py-2.5 font-medium text-marca transition-colors hover:bg-marca-claro focus:outline-none focus:ring-2 focus:ring-marca;
+  }
+  .btn-stock {
+    @apply h-8 w-8 rounded-md border border-marca bg-white text-marca transition-colors hover:bg-marca hover:text-white focus:outline-none focus:ring-2 focus:ring-marca disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:bg-white disabled:hover:text-marca;
+  }
+  .campo {
+    @apply w-full rounded-lg border border-gray-300 px-3 py-2.5 text-base focus:border-marca focus:outline-none focus:ring-2 focus:ring-marca/40;
+  }
+  .tarjeta {
+    @apply rounded-xl bg-white p-4 shadow-sm;
+  }
+  .titulo-pagina {
+    @apply mb-4 text-2xl font-bold text-marca;
+  }
+}
